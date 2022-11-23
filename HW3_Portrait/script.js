@@ -1,7 +1,5 @@
 const birth_year = prompt('Вкажіть ваш рік народження');
 
-console.log(birth_year);
-
 let age;
 
 if (birth_year === null || birth_year === "") {
@@ -9,8 +7,10 @@ if (birth_year === null || birth_year === "") {
     age = "Ми не знаємо вашого віку(((";
 } else if (isNaN(+birth_year)) {
     alert("Для року народження можна використовувати лише цифри! Спробуємо ще раз!");
+} else if (new Date().getFullYear() <= birth_year) {
+    age = "Ви ще не народились!";
 } else {
-    age = new Date().getFullYear() - birth_year;
+    age = `Ваш вік ${new Date().getFullYear() - birth_year}`;
 }
 
 const city = prompt("В якому місті ви живете?");
@@ -36,7 +36,6 @@ switch (city) {
         str_city = `Ви живете у місті ${city}`;
         break;
 }
-console.log(str_city);
 
 const sport = prompt("Вкажіть ваш улюблений вид спорту");
 
