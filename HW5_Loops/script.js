@@ -49,7 +49,24 @@ switch (task) {
             alert(`Ви щось зробили невірно!`)
         }
         break;
-    
+    case 5:
+        document.write("5. Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).<br>");
+        const num = +prompt("Введіть ціле додатне число");
+        let isTrue = false;
+        if (Number.isInteger(num) && (num > 0)) {
+            for (let i = 0, exp = 1; exp <= num; i++) {
+                exp = Math.pow(3, i);
+                if (exp === num) {
+                    isTrue = true;
+                    break;
+                }
+            }
+            let text = (isTrue === true) ? `Число ${num} можна отримати шляхом зведення 3 у ступінь` : `Число ${num} неможливо отримати шляхом зведення 3 у ступінь`;
+            document.write(text);
+        } else {
+            alert(`Ви щось зробили невірно!`)
+        }
+        break;
     default:
             alert("Некоректний вибір");
 }
