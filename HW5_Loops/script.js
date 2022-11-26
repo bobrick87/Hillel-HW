@@ -20,8 +20,18 @@ switch (task) {
             }
         }
         break;
+    case 3:
+        document.write("3. Дане ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N. <br>");
+        const n = +prompt("Введіть ціле число");
+        if (Number.isInteger(n)) {
+            for (let i = 1; Math.pow(i, 2) <= n; i++) {
+                document.write(`${i} <br>`);
+            }
+        } else {
+           alert('Ви щось зробили невірно');
+        }
+        break;
     
-
         default:
             alert("Некоректний вибір");
 
