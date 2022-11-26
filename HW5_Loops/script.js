@@ -28,11 +28,29 @@ switch (task) {
                 document.write(`${i} <br>`);
             }
         } else {
-           alert('Ви щось зробили невірно');
+           alert('Ви щось зробили невірно!');
+        }
+        break;
+    case 4:
+        document.write("4. Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе). <br>")
+        const int = +prompt("Введіть ціле число");
+        if (Number.isInteger(int) && (int > 1)) {
+            let i = 1, isSimple = true;
+            while (i < int) {
+                if (int % i === 0 && i != int && i != 1) {
+                    isSimple = false;
+                    break;
+                } 
+                i++;
+            }
+            let text = (isSimple === true) ? `${int} є простим числом` : `${int} не є простим числом` ;
+            document.write(text);
+        } else {
+            alert(`Ви щось зробили невірно!`)
         }
         break;
     
-        default:
+    default:
             alert("Некоректний вибір");
-
 }
+
