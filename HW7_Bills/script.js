@@ -59,22 +59,22 @@ let users = [
     ]
 
 const phonesArray = [];
-let sum1 = 0,
-    sum2 = 0;
+let sumAllUsers = 0,
+    sumChosenUsers = 0;
 
 for (let i = 0; i < users.length; i++) {
     users[i].balance = users[i].balance.replace('$', '');
     users[i].balance = users[i].balance.replace(',', '');
-    sum1 += +users[i].balance;
+    sumAllUsers += +users[i].balance;
     if (users[i].balance > 2000) {
         phonesArray.push(users[i].phone);
-        sum2 += +users[i].balance;
+        sumChosenUsers += +users[i].balance;
     }
 }
 
 console.log(`Телефони користувачів, в яких баланс більше 2000$ :`);
 console.log(phonesArray);
 
-console.log(`Сума балансів усіх користувачів ${sum1.toFixed(2)}$`);
+console.log(`Сума балансів усіх користувачів ${sumAllUsers.toFixed(2)}$`);
 
-console.log(`Сума балансів користувачів, які увійшли до вибірки ${sum2.toFixed(2)}$`);
+console.log(`Сума балансів користувачів, які увійшли до вибірки ${sumChosenUsers.toFixed(2)}$`);
