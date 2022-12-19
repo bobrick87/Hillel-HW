@@ -1,0 +1,24 @@
+#ghost {
+    background-color: aquamarine;
+    width: 40%;
+    height: 300px;
+
+}
+
+#textField {
+    width: 40%;
+    height: 300px;
+    margin: 1%;
+    /* text-align: center;
+    vertical-align: top; */
+}
+
+#wrapper {
+    background-color: burlywood;    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
