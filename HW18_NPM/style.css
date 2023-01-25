@@ -1,0 +1,87 @@
+body {
+    background-image: url(images/body-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* display: flex; */
+  }
+
+  .main_button {
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: #c52137;
+    box-shadow: 0 0 40px 40px #c52137 inset, 0 0 0 0 #c52137;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: white;
+    transition: .15s ease-in-out;
+  }
+  .main_button:hover {
+    box-shadow: 0 0 10px 0 #c52137 inset, 0 0 10px 4px #c52137;
+    color: #c52137;
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+  }
+
+  .modal_window {
+    display: none;
+    /* display: block; */
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: #c52137;
+    box-shadow: rgba(255, 253, 253, 0.25) 0px 14px 28px, rgba(249, 248, 248, 0.22) 0px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #c52137;
+    z-index: 100;
+  }
+
+  #modal_background {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+  }
+
+  #close_button {
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border-color: #f4dee1;
+    box-shadow: 0 0 40px 40px #f4dee1 inset, 0 0 0 0 #f4dee1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 3px;
+    color: #c52137;
+    transition: .15s ease-in-out;
+  }
+  #close_button:hover {
+    box-shadow: 0 0 10px 0 #f4dee1 inset, 0 0 10px 4px #f4dee1;
+    color: #c52137;
+  }
+
+  p {
+    text-align: center;
+  }
