@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-box">
+        <header>Генератор бензиновий RZTK G 3500</header>
+        <div class="content">
+            <section class="imageSection">
+                <img src="Image/image.jpg" alt="Generator">
+            </section>
+            <section class="goodData">
+                <div class="price">28 999₴</div>
+                <div class="characteristics">
+                    <ul>
+                        <li>Система пуску - Ручний стартер</li>
+                        <li>Кількість фаз - Однофазний</li>
+                        <li>Максимальна потужність - 3.2 кВт</li>
+                        <li>Об'єм паливного бака - 14 л</li>
+                    </ul>
+                </div>
+                <div class="sell">
+                    <button id="sellIt">Купити</button>
+                </div>
+            </section>
+        </div>
+        <section id="orderForm">
+            <h1>Будьласка, введіть ваші дані:</h1>
+            <form id="order" name="order" novalidate>
+                <div class="inputContainer">
+                    <label>Прізвище та ім'я: <input type="text" name="name" id="name" required autofocus></label>
+                </div>
+                <div class="inputContainer">
+                    <label>Адреса електронної пошти: <input type="email" name="email" id="email" required></label>
+                </div>
+                <div class="inputContainer">
+                    <label>Телефон: <input type="tel" name="phone" id="phone" placeholder="+380(xx)xxx-xx-xx" required></label>
+                </div>
+                <div class="inputContainer">
+                    <label> Оберіть місто доставки: 
+                        <select name="town" id="town" required>
+                            <option value="">-</option>
+                            <option value="Дніпро">Дніпро</option>
+                            <option value="Харків">Харків</option>
+                            <option value="Одеса">Одеса</option>
+                            <option value="Львів">Львів</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="inputContainer">
+                    <label>Відділення Нової пошти: <input type="number" name="post" id="post" required></label>
+                </div>
+                <div class="inputContainer">
+                    <label for="payment">Спосіб оплати:</label>
+                    <label><input type="radio" name="payment" id="payment1" value="Готівка"> Післяплата</label>
+                    <label><input type="radio" name="payment" id="payment2" value="Банківська картка"> Банківська картка</label>
+                </div>
+                <div class="inputContainer">
+                    <label>Кількість товару: <input type="number" name="number" id="number" required></label>
+                </div>
+                <div class="inputContainer">
+                    <label for="comment">Коментар до замовлення</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Підтвердити замовлення" name="submitButton">
+            </form>
+        </section>
+        <section id="orderData">
+            <h1>Інформація по вашому замовленню</h1>
+            <table id="tableOrderData">
+                <tr>
+                    <td>Ім'я замовника</td>
+                    <td id="nameData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="emailData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td id="phoneData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Місто доставки</td>
+                    <td id="townData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Відділення Нової пошти</td>
+                    <td id="postData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Спосіб оплати</td>
+                    <td id="paymentData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Кількість товару</td>
+                    <td id="numberData" class="orderInfo"></td>
+                </tr>
+                <tr>
+                    <td>Коментар до замовлення:</td>
+                    <td id="commentData" class="orderInfo"></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
