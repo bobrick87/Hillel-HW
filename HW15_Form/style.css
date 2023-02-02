@@ -1,0 +1,91 @@
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+header {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.goodData {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.imageSection {
+    flex: 3;
+}
+
+img {
+    width: 90%;
+    padding: 10px;
+}
+
+.price {
+    font-size: 2.5em;
+    flex: 1;
+}
+
+.characteristics {
+    flex: 3;
+}
+
+.sell {
+    flex: 1;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+#orderForm {
+    display: none;
+    background-color:rgb(165, 187, 245);
+    border-radius: 10px;
+    width: 50%;
+}
+
+h1 {
+    padding: 3px;
+}
+
+#order{
+    display: flex;
+    flex-direction: column;
+}
+
+#orderData {
+    display: none;
+}
+
+.invalidField {
+    border: 1px solid red;
+}
+.inputContainer {
+    width: 50%;
+    margin: 5px;
+    padding: 3px;
+}
+label {
+    font-weight: bold;
+}
+
+td {
+    padding: 3px;
+}
