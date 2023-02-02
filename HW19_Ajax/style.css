@@ -1,0 +1,28 @@
+.container {
+    width: 300px;
+    height: auto;
+    background-image: url('image/background.jpg');
+    border-radius: 15px;
+}
+table {
+    margin: auto;
+    color: midnightblue;
+    font-size: large;
+    padding: 0 15px 20px 15px;
+}
+td { 
+    padding: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 15px;
+}
+td:first-child {
+    text-align: end;
+}
+h1 {
+    color: midnightblue;
+    margin: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
