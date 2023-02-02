@@ -1,13 +1,13 @@
 .container {
     width: 300px;
     height: auto;
-    background-image: url('image/background.jpg');
+    background-image: url('image/weather_background.jpg');
     border-radius: 15px;
 }
 table {
     margin: auto;
-    color: midnightblue;
     font-size: large;
+    color: midnightblue;
     padding: 0 15px 20px 15px;
 }
 td { 

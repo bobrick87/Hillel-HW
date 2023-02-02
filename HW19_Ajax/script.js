@@ -46,8 +46,6 @@ function getWeather(lat, lon) {
             document.getElementById("speed").innerText = data.wind.speed;
             document.getElementById("deg").innerText = data.wind.deg;
             
-            // console.log(document.getElementById("description"))
-            // console.log(data.weather[0].description);
         })
 }
 
