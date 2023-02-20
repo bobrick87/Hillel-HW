@@ -42,7 +42,7 @@ console.log(iterator.next().done);
     return this;
   }
   
-  console.log("")
+  console.log("") //пуста строчка в консолі для візуального розділення воводу 2х функцій, просто щоб гапніше виглядало
   const iterator3 = Boo2();
   console.log(iterator3.next().value);
   console.log(iterator3.next().done);
