@@ -10,35 +10,41 @@ const iterator = Foo();
 console.log(iterator.next().value);
 console.log(iterator.next().done);
 console.log(iterator.next().value);
-console.log(iterator.next().value);
+console.log(iterator.next().done);
   
-
-function Boo() {  
-    this.value = 0;
-    this.done = false;
-    this.next = () => {
-      if (this.value === 0) {
-        console.log("start");
+  
+  function Boo2() {
+    this.step = 1;
+    this.next = function() {
+      let result = {
+        value: undefined,
+        done: true
+      };
+  
+      if (this.step === 1) {
+        console.log('start');
       }
-      if (this.value === 3) {
-        console.log("finish");
-        this.done = true;
+  
+      if (this.step === 4) {
+        console.log('finish');
       }
-      this.value++;      
+  
+      if (this.step <= 3) {
+        result.value = this.step;
+        result.done = false;
+      }
       
-      if (this.done === true) {
-        this.value = undefined;
-      }
-
-      return this;
+      this.step ++;
+  
+      return result;
     }
+  
     return this;
-}
-
-console.log('');
-
-const iterator2 = Boo();
-console.log(iterator2.next().value);
-console.log(iterator2.next().done);
-console.log(iterator2.next().value);
-console.log(iterator2.next().done);
+  }
+  
+  console.log("")
+  const iterator3 = Boo2();
+  console.log(iterator3.next().value);
+  console.log(iterator3.next().done);
+  console.log(iterator3.next().value);
+  console.log(iterator3.next().done);
