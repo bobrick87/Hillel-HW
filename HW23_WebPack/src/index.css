@@ -1,0 +1,20 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+#container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 35%;
+    margin: 10px auto;
+
+}
+
+button {
+    margin: 10px auto;
+    width: 30%;
+}
