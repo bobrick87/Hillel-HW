@@ -1,0 +1,15 @@
+img {
+    width: 500px;
+    display:block;
+    margin: 20px auto;
+
+}
+
+.central-container {
+    display:flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    min-width: 70%;
+    height: 550px;
+}
